@@ -60,6 +60,8 @@ syntax on
 let g:airline_theme='codedark'
 let g:airline_powerline_fonts=1
 let g:airline_skip_empty_sections=1
+let g:airline#extensions#tabline#enabled = 1		" Enable list of buffers
+let g:airline#extensions#tabline#fnamemod = ':t'	" Show filename only
 colorscheme codedark
 
 " set transparent background, end of buffer and line numbers
