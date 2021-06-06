@@ -1,0 +1,44 @@
+/************************************************
+ * ROFI "dmenu-bottom" Color theme
+ * License: CC BY-NC-SA 2.0 (hjonkers - 2021)
+ ***********************************************/
+
+
+* {
+    background-color:      #000000;
+    border-color:          White;
+    text-color:            #ff9900;
+    font:            "Times New Roman 9";
+}
+
+window {
+    anchor:     south;
+    location:   south;
+    width:      100%;
+    padding:    4px;
+    children:   [ horibox ];
+}
+
+horibox {
+    orientation: horizontal;
+    children:   [ prompt, entry, listview ];
+}
+
+listview {
+    layout:     horizontal;
+    spacing:    5px;
+    lines:      100;
+}
+
+entry {
+    expand:     false;
+    width:      10em;
+}
+
+element {
+    padding: 0px 2px;
+}
+element selected {
+    text-color: black;
+    background-color: #ff9900;
+}
