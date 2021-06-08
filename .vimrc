@@ -16,6 +16,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tomasiser/vim-code-dark'
 Plugin 'preservim/nerdtree'
+Plugin 'airblade/vim-gitgutter'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -33,6 +34,7 @@ set incsearch
 set scrolloff=8
 set colorcolumn=80
 set signcolumn=yes
+set updatetime=100
 
 syntax on
 
@@ -45,10 +47,18 @@ let g:airline#extensions#tabline#enabled = 1		" Enable list of buffers
 let g:airline#extensions#tabline#fnamemod = ':t'	" Show filename only
 colorscheme codedark
 
-" set transparent background, end of buffer and line numbers
+" Set transparent background, end of buffer and line numbers
 highlight Normal   	ctermbg=NONE    guibg=NONE
 highlight EndOfBuffer	ctermbg=NONE    guibg=NONE
 highlight LineNr   	ctermbg=NONE    ctermfg=241
+
+" Set Gitgutter
+let g:gitgutter_sign_added = '+'
+let g:gitgutter_sign_modified = '/'
+let g:gitgutter_sign_removed = '-'
+highlight GitGutterAdd    ctermbg=234 guifg=#009900 ctermfg=2
+highlight GitGutterChange ctermbg=234 guifg=#bbbb00 ctermfg=3
+highlight GitGutterDelete ctermbg=234 guifg=#ff2222 ctermfg=1
 
 " ----- FUNCTIONS --------------------------------------------------------------
 
