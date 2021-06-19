@@ -1,4 +1,4 @@
-# ReTExt configuration
+# ReText configuration
 
 ## Using ReText stylesheets
 
@@ -15,7 +15,7 @@ styleSheet=[filepath.css]
 useWebKit=true
 ```
 
-The `appStyleSheet`- and `styleSheet`-parameters only allow absolute pathnames. System variables like `$HOME` or aliases like `~` cannot be used to refer to the user's home directory. To avoid having to use the username in the path, save the stylesheets in the `etc`-directory and refer to those files instead:
+The `appStyleSheet`- and `styleSheet`-parameters only allow absolute pathnames. System variables like `$HOME` or aliases like `~` cannot be used to refer to the user's home directory. To avoid having to use the username in the path, save the stylesheets in the `/etc`-directory and refer to those files instead:
 
 ```
 appStyleSheet=/etc/md-qt.qss
