@@ -1,0 +1,15 @@
+[General]
+appStyleSheet=/etc/md-qt.qss
+editorFont=Monospace
+editorFontSize=11
+font=Monospace
+fontSize=14
+lineNumbersEnabled=true
+livePreviewByDefault=true
+styleSheet=/etc/preview-houdini.css
+useWebKit=true
+
+[ColorScheme]
+codeSpans=darkGray
+currentLineHighlight=#37fdd9c2
+lineNumberArea=#32414B
