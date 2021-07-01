@@ -1,9 +1,9 @@
 [General]
 appStyleSheet=/etc/md-qt.qss
 editorFont=Monospace
-editorFontSize=11
+editorFontSize=9
 font=Monospace
-fontSize=14
+fontSize=9
 lineNumbersEnabled=true
 livePreviewByDefault=true
 styleSheet=/etc/preview-houdini.css
