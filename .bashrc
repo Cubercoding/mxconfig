@@ -113,6 +113,13 @@ if ! shopt -oq posix; then
 fi
 source $HOME/.config/bash-config/bashrc.bash
 
+if [ -f `which powerline-daemon` ]; then
+      powerline-daemon -q
+        POWERLINE_BASH_CONTINUATION=1
+          POWERLINE_BASH_SELECT=1
+            . /usr/share/powerline/bindings/bash/powerline.sh
+fi
+
 printf "\n"
 printf "================================================================================"
 printf "\n"
